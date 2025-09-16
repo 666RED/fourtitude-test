@@ -4,7 +4,7 @@ Follow the steps below to setup the Angular application.
 
 ## Version
 
-Node version: 22.18.0\_\_
+Node version: 22.18.0\
 Angular version: 20.3.1
 
 ## Step 1

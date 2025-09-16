@@ -32,3 +32,9 @@ Serve application on port 4200
 ```bash
 npm start
 ```
+
+OR
+
+```bash
+yarn run start
+```

@@ -1,0 +1,11 @@
+@if(alertService.alert()) {
+<div class="filter">
+  <div class="container">
+    <div class="title">This page says</div>
+    <div class="message">
+      {{ alertService.message() }}
+    </div>
+    <button class="ok-button" (click)="closeAlert()">OK</button>
+  </div>
+</div>
+}

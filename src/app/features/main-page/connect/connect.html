@@ -1,0 +1,60 @@
+<app-nav-section
+  sectionTitle="Connect"
+  description="Every successful connection starts in conversation. Drop us a line today :)"
+  sectionId="connect"
+>
+  <form id="connect-form" [formGroup]="connectForm" (submit)="handleSubmit($event)">
+    <div class="field-container">
+      <div class="input-field-container">
+        <div class="input-field">
+          <input
+            formControlName="name"
+            type="text"
+            required
+            name="name"
+            placeholder="Name"
+            id="name"
+          />
+          <label for="name">Name</label>
+        </div>
+        <div class="input-field">
+          <input
+            formControlName="email"
+            type="email"
+            required
+            name="email"
+            placeholder="Email address"
+            id="email"
+          />
+          <label for="email">Email address</label>
+        </div>
+        <div class="input-field">
+          <input
+            formControlName="contactNo"
+            type="text"
+            required
+            name="contact-no"
+            placeholder="Contact no."
+            id="contact-no"
+          />
+          <label for="contact-no">Contact no.</label>
+        </div>
+      </div>
+      <div class="input-field">
+        <textarea
+          formControlName="additionalInfo"
+          required
+          placeholder="How can we help?"
+          id="additional-info"
+        ></textarea>
+        <label for="additional-info" id="additional-info-label">How can we help?</label>
+      </div>
+    </div>
+    <div class="button-container">
+      <button class="btn clear-btn" type="button" (click)="clearForm()">Clear</button>
+      <button class="btn connect-with-us-btn" type="submit" [disabled]="!validateForm()">
+        Contact with us
+      </button>
+    </div>
+  </form>
+</app-nav-section>

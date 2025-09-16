@@ -1,0 +1,16 @@
+<app-header
+  [sectionsOffsetTop]="sectionsOffsetTop()"
+  [updateSectionsOffsetTop]="updateSectionsOffsetTop"
+/>
+<section class="nav-section" #devAndIntSection>
+  <app-dev-and-int />
+</section>
+<section class="nav-section" #uiAndUxSection>
+  <app-ui-and-ux />
+</section>
+<section class="nav-section" #connectSection>
+  <app-connect />
+</section>
+<app-footer />
+
+<app-alert></app-alert>

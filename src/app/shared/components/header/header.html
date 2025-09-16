@@ -1,0 +1,39 @@
+<div class="header" #headerRef>
+  <div class="main-container">
+    <a href="#">
+      <img src="assets/logo-1x.png" srcset="assets/logo-2x.png" class="logo-image" />
+    </a>
+    @if(innerWidth() >= 768) {
+    <div class="horizontal-nav-container">
+      @for(navLink of navLinks; track navLink.href) {
+      <app-nav-link
+        [props]="navLink"
+        [currentHeaderHeight]="headerHeight()"
+        [sectionsOffsetTop]="sectionsOffsetTop()"
+        [(currentNavLink)]="currentNavLink"
+      />
+      }
+    </div>
+    }@else { @if(isMenuOpen()) {
+    <div (click)="toggleMenuOpen()">
+      <mat-icon class="white-icon icon">close</mat-icon>
+    </div>
+    }@else {
+    <div (click)="toggleMenuOpen()">
+      <mat-icon class="white-icon icon">menu</mat-icon>
+    </div>
+    } }
+  </div>
+  <div class="vertical-nav-container" [class.open]="isMenuOpen()">
+    <div class="vertical-nav-content">
+      @for(navLink of navLinks; track navLink.href) {
+      <app-nav-link
+        [props]="navLink"
+        [currentHeaderHeight]="headerHeight()"
+        [sectionsOffsetTop]="sectionsOffsetTop()"
+        [(currentNavLink)]="currentNavLink"
+      />
+      }
+    </div>
+  </div>
+</div>

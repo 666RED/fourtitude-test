@@ -1,0 +1,7 @@
+.nav-section:nth-child(even) {
+  background-color: var(--main-bg-gray);
+}
+
+.nav-section:nth-child(odd) {
+  background-color: #ffffff;
+}

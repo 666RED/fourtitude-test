@@ -1,1 +1,149 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.white-icon {
+  color: white;
+}
+
+// Typography
+.section-title {
+  font-size: 1.25rem;
+  line-height: 1.375rem;
+}
+
+.section-description,
+.card-description,
+.nav-link {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.card-title {
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
+
+.card-sub-title,
+.footer-text {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+@media (min-width: 425px) {
+  .section-title {
+    line-height: 1.5rem;
+  }
+
+  .section-description,
+  .card-description,
+  .nav-link {
+    line-height: 1.375rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .section-description,
+  .card-description {
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+  }
+
+  .card-title {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  .card-sub-title,
+  .footer-text {
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  .section-description,
+  .card-description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+
+  .card-sub-title {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .footer-text {
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+  }
+
+  .nav-link {
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section-title {
+    font-size: 1.5rem;
+    line-height: 1rem;
+  }
+
+  .section-description,
+  .card-description {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+
+  .card-title {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  .card-sub-title {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .footer-text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+:root {
+  --main-bg-gray: #f0f0f0;
+  --header-footer-gray: #333333;
+  --card-sub-title-gray: #666666;
+  --form-blue: #0f4ab2;
+  --form-input-border-gray: #cccccc;
+  --input-gray: #999999;
+  --alert-button-blue: #1a73e8;
+}

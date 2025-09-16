@@ -1,0 +1,27 @@
+.footer-text {
+  background-color: var(--header-footer-gray);
+  color: white;
+  padding-block: 15px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer-text {
+    text-align: right;
+    padding-right: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-text {
+    text-align: right;
+    padding-right: 300px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer-text {
+    text-align: right;
+    padding-right: 360px;
+  }
+}

@@ -9,7 +9,7 @@ Angular version: 20.3.1
 
 ## Step 1
 
-Open project and move to project root folder
+Open project and make sure you are at project root folder (where package.json file is located)
 
 ## Step 2
 
